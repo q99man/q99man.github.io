@@ -127,6 +127,7 @@ h1 {
   font-weight: 1000;
   letter-spacing: 0;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .hero-meta {
@@ -454,6 +455,10 @@ h1 {
 
   .section {
     padding: 72px 0;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 12vw, 3.7rem);
   }
 
   .project-heading {
