@@ -315,7 +315,7 @@ ul {
 }
 
 .skill-grid article {
-  min-height: 270px;
+  min-height: 330px;
   border: 1px solid var(--line);
   background: rgba(13, 21, 18, 0.72);
   padding: 24px;
@@ -338,21 +338,30 @@ ul {
 .skill-grid li {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   border-bottom: 1px solid rgba(213, 184, 126, 0.14);
-  padding: 0 0 10px;
+  padding: 0 0 12px;
   color: var(--ink);
-  font-size: 0.98rem;
+  font-size: 1.03rem;
   font-weight: 800;
 }
 
-.skill-grid li::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent-strong);
-  box-shadow: 0 0 0 4px rgba(213, 184, 126, 0.1);
+.tool-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(245, 240, 231, 0.1);
+  border-radius: 10px;
+  background: #f8f8f5;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.tool-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .project-section {
