@@ -121,9 +121,9 @@ h4 {
 }
 
 h1 {
-  max-width: 1040px;
+  max-width: 100%;
   color: var(--accent);
-  font-size: clamp(3.7rem, 12vw, 9.4rem);
+  font-size: clamp(3rem, 8.5vw, 7.8rem);
   font-weight: 1000;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -458,7 +458,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(1.9rem, 12vw, 3.7rem);
+    font-size: clamp(1.55rem, 10vw, 3rem);
   }
 
   .project-heading {
