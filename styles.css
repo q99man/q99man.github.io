@@ -1024,13 +1024,11 @@ ul {
 }
 
 .career-detail-list article {
-  display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 20px;
+  display: block;
 }
 
-.career-detail-list .career-project-index {
-  margin: 0;
+ .career-detail-list .career-project-index {
+  margin: 0 0 10px;
   color: var(--accent-strong);
   font-size: 1.3rem;
 }
@@ -1090,5 +1088,5 @@ ul {
 .career-page h2,
 .career-page h3 {
   overflow-wrap: anywhere;
-  word-break: break-all;
+
 }
