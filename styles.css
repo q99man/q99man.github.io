@@ -463,6 +463,12 @@ ul {
   color: var(--muted);
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .contact-section {
   padding-bottom: 82px;
 }
