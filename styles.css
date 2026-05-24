@@ -975,6 +975,12 @@ ul {
   color: var(--muted);
 }
 
+.career-education-card h3,
+.career-education-card p {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 .career-history-grid ul {
   display: grid;
   gap: 8px;
@@ -1005,10 +1011,26 @@ ul {
   align-items: start;
 }
 
+.career-skill-panel {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.career-skill-panel > span {
+  color: var(--dim);
+  font-size: 0.82rem;
+  font-weight: 1000;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .career-skill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  align-content: flex-start;
 }
 
 .career-skill-tags li {
@@ -1090,4 +1112,71 @@ ul {
 .career-page h3 {
   overflow-wrap: anywhere;
 
+}
+@media (max-width: 720px) {
+  .career-education-card > div,
+  .career-skill-panel,
+  .career-skill-tags {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .career-skill-tags {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .career-skill-tags li {
+    min-width: 0;
+    padding: 7px 8px;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 720px) {
+  .career-education-card h3,
+  .career-education-card p {
+    word-break: break-all;
+  }
+}
+@media (max-width: 720px) {
+  .career-education-card h3,
+  .career-education-card p,
+  .career-skill-panel,
+  .career-skill-tags {
+    max-width: calc(100vw - 72px);
+  }
+
+  .career-skill-tags {
+    width: calc(100vw - 72px);
+  }
+}
+@media (max-width: 720px) {
+  .career-education-card h3,
+  .career-education-card p,
+  .career-skill-panel,
+  .career-skill-tags {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .career-skill-tags {
+    width: 280px;
+    max-width: 280px;
+  }
+}
+@media (max-width: 720px) {
+  .career-education-card h3,
+  .career-education-card p,
+  .career-skill-panel,
+  .career-skill-tags {
+    width: min(320px, calc(100vw - 72px));
+    max-width: min(320px, calc(100vw - 72px));
+  }
+
+  .career-education-card h3,
+  .career-education-card p {
+    word-break: normal;
+  }
 }
