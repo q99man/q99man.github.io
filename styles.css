@@ -648,7 +648,7 @@ ul {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: clamp(32px, 7vw, 92px);
-  align-items: stretch;
+  align-items: center;
   min-height: calc(100svh - var(--header) - 120px);
   padding-bottom: 96px;
 }
@@ -693,7 +693,8 @@ ul {
 
 .career-snapshot {
   display: grid;
-  align-content: end;
+  align-content: start;
+  align-self: center;
   border: 1px solid var(--line);
   background: rgba(13, 21, 18, 0.72);
   padding: 28px;
